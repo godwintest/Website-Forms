@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #001660;
+  padding: 80px 0px;
+}
+
+form {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  padding: 30px 30px;
+  border-radius: 10px;  
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input, textarea {
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  background-color: rgb(240, 240, 240);
+  padding: 10px;
+  font-size: 14px;
+}
+
+.input h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.selection input{
+    margin: 15px 0px;
+}
+
+form select{
+    margin-top: 15px;
+}
+
+textarea{
+    width: 100%;
+    padding-bottom: 10px!important;
+}
+
+.message{
+    margin-top: 10px;
+}
+
+.password-match-span{
+  color: #ff5361;
+}
+
+.btn{
+  padding: 10px 30px;
+  background-color: #ff5361;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  position: relative;
+  left: 35%;   
+  margin: 10px 0;
+}
+
+/* Media Query For Mobile  */
+@media (max-width: 600px){
+  form{
+    width: 85%;
+  }
+}
+
+/* Media Query For Tablet */
+@media (min-width: 601px) and (max-width: 950px){
+  form{
+    width: 75%;
+  }
+}
+
+/* Media Query For Desktop */
+@media (min-width: 951px){
+  form{
+    width: 50%;
+  }
+}
