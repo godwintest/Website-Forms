@@ -17,7 +17,7 @@ form {
   width: 50%;
   height: 50%;
   background-color: white;
-  padding: 30px 30px;
+  padding: 20px 20px;
   border-radius: 10px;  
 }
 
@@ -46,6 +46,10 @@ form {
 
 form select{
     margin-top: 15px;
+    padding: 7px 20px;
+    border-radius: 4px;
+    border-color: rgb(170, 170, 170);
+    display: inline-flex;
 }
 
 textarea{
@@ -61,8 +65,14 @@ textarea{
   color: #ff5361;
 }
 
+.btn-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .btn{
-  padding: 10px 30px;
+  padding: 10px 40px;
   background-color: #ff5361;
   color: white;
   font-size: 20px;
@@ -72,22 +82,27 @@ textarea{
   font-weight: 600;
   border-radius: 4px;
   position: relative;
-  left: 35%;   
   margin: 10px 0;
 }
 
 /* Media Query For Mobile  */
 @media (max-width: 600px){
   form{
-    width: 85%;
+    width: 95%;
   }
+
+  .btn {
+    padding: 10px 40px;
+  }
+
 }
 
 /* Media Query For Tablet */
-@media (min-width: 601px) and (max-width: 950px){
+@media (min-width: 600px) and (max-width: 950px){
   form{
-    width: 75%;
+    width: 85%;
   }
+
 }
 
 /* Media Query For Desktop */
@@ -95,4 +110,5 @@ textarea{
   form{
     width: 50%;
   }
+
 }
